@@ -23,7 +23,7 @@
   --brand:#0EA5E9;
   --brand-deep:color-mix(in srgb, #0EA5E9 76%, #000);
   --brand-soft:color-mix(in srgb, #0EA5E9 14%, #fff);
-  --brand2:#5FB87A;
+  --brand2:#D8B48A;
   --canvas:#0E1F26;
   --ink:#EAF1F0;
 }
@@ -39,6 +39,13 @@
   --hscale:1;
   --bscale:1;
 }
+.sec-title .out,.book h2 .out,.hero h1 .out,.lead h2 .out,
+body[data-variant] .out,body.canvas-light .out,body.no-outline .out,
+h1 .accent,h2 .accent,.sec-title .accent,.hero h1 .accent{
+  -webkit-text-stroke:0!important;color:var(--brand2)!important;
+}
+[data-tone="brand"] .book h2 .out,[data-tone="brand"] .book h2 .accent,
+[data-tone="accent"] .sec-title .out,[data-tone="accent"] .sec-title .accent{color:#fff!important}
 
 
 /* ---- TONE SYSTEM ----
@@ -495,7 +502,7 @@ body.canvas-light[data-variant="1"] .hero-loc{color:rgba(242,239,233,0.75)}
 
 </head>
 <body class="no-outline" data-variant="2">
-<nav id="nav" class="">
+<nav id="nav" class="scrolled">
   <div class="logo"><span id="t-logo">roses and ribbons</span></div>
   <div class="nav-right">
     <a href="#services">Services</a>
